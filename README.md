@@ -15,9 +15,6 @@ Esse foi o primeiro projeto do curso de React com Redux da Origamid, que desenvo
 
 ## 💻 Tecnologias utilizadas
 
-- ``HTML5``
-- ``CSS3``
-- ``JAVASCRIPT ES6``
 - ``REACT.JS``
 - ``REDUX``
 - ``VITE.JS``
