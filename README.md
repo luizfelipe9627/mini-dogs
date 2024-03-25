@@ -1,7 +1,7 @@
 # Mini Dogs
 ![Badge](http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge)   
 
-<img src="https://github.com/luizfelipe9627/mini-dogs/blob/main/src/assets/img/dogs.gif" alt="Apresentação do Dogs">
+<img src="https://github.com/luizfelipe9627/mini-dogs/blob/main/src/assets/mini-dogs.gif" alt="Apresentação do Dogs">
 
 ## 📄 Descrição
 Mini Dogs é um projeto que atráves de um usuário já cadastrado, mostra todas as fotos de cachorros que foram postadas, pelo mesmo usuário.
