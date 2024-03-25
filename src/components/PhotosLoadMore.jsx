@@ -5,21 +5,20 @@ import { loadNewPhotos } from "../store/photos";
 import Loading from "./helper/Loading";
 
 const PhotosLoadMore = () => {
-  const dispatch = useDispatch(); // Está executando o hook useDispatch que é responsável por acessar o dispatch da store que dispara as ações, e armazena na constante dispatch.
+  const dispatch = useDispatch();
 
-  const { pages, infinite, loading } = useSelector((state) => state.photos); // Está executando o hook useSelector que é responsável por acessar o estado da store, e está desestruturando as propriedades pages e infinite.
+  const { pages, infinite, loading } = useSelector((state) => state.photos);
 
   function handleClick() {
-    dispatch(loadNewPhotos(pages + 1)); // Está disparando a ação loadNewPhotos passando a próxima página como parâmetro, fazendo com que as fotos da próxima página sejam adicionadas ao estado da store.
+    dispatch(loadNewPhotos(pages + 1));
   }
 
   if (loading) {
     return <Loading />;
   }
 
-  // Se a propriedade infinite for igual a false, executar o bloco de código do if.
   if (!infinite) {
-    return null; // Retorna null, ou seja, não renderiza nada.
+    return null;
   }
 
   return (

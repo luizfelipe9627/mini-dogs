@@ -6,11 +6,10 @@ import Content from "./components/Content.jsx";
 import "./App.css";
 
 const App = () => {
-  const dispatch = useDispatch(); // Está executando o hook useDispatch que é responsável por acessar o dispatch da store que dispara as ações, e armazena na constante dispatch.
+  const dispatch = useDispatch();
 
-  // O useEffect executa toda vez que o dispatch é modificado, ou seja sempre que uma ação for acionada o useEffect executa o bloco de código dentro dele.
   React.useEffect(() => {
-    dispatch(autoLogin()); // Dispara uma ação passando como parâmetro e executando a função autoLogin.
+    dispatch(autoLogin());
   }, [dispatch]);
 
   return (
