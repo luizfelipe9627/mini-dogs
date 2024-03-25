@@ -4,7 +4,7 @@ const localStorage = (store) => (next) => (action) => {
 
   const { meta } = action; // Está desestruturando a propriedade meta da ação, que é responsável por guardar informações adicionais, no caso o token da requisição.
 
-  // Se a propriedade meta e o localStorage dentro de meta existir, então executa o console.log.
+  // Se a propriedade meta e o localStorage dentro de meta existir, então executa o if.
   if (meta && meta.localStorage) {
     const { key, value } = meta.localStorage; // Está desestruturando a chave e o valor do localStorage que está dentro da propriedade meta.
 

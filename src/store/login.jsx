@@ -1,4 +1,4 @@
-import { combineReducers } from "@reduxjs/toolkit"; // Importa o combineReducers da biblioteca redux.
+import { combineReducers } from "@reduxjs/toolkit";
 import createAsyncSlice from "./helper/createAsyncSlice";
 import getLocalStorage from "./helper/getLocalStorage";
 import { removePhotos } from "./photos";
