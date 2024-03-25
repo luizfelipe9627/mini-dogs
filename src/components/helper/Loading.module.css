@@ -1,0 +1,26 @@
+.loading {
+  height: 2px;
+  background-color: #000;
+  /* Oculta o conteúdo que ultrapassa o tamanho do elemento. */
+  overflow: hidden;
+  max-width: 25%;
+  margin: 2rem auto;
+}
+
+.loading::before {
+  display: block;
+  content: "";
+  width: 75%;
+  height: 2px;
+  background-color: #fff;
+  animation: loading 0.5s linear forwards infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(125%);
+  }
+}

@@ -1,0 +1,26 @@
+.item {
+  display: grid;
+  grid-template-columns: 50px 1fr auto;
+  grid-template-rows: 50px;
+  align-items: center;
+  gap: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  padding-right: 1rem;
+}
+
+.img {
+  border-radius: 4px;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.access {
+  font-family: monospace;
+  font-size: 0.875rem;
+  color: #999;
+}
